@@ -12,8 +12,8 @@ const App = () => {
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/home/privacy-policy-1918" element={<PrivacyPolicy />} />
-          <Route path="*" element={<Navigate to="/home/privacy-policy-1918" />} />
+          <Route path="/privacy-policy-1918" element={<PrivacyPolicy />} />
+          <Route path="*" element={<Navigate to="/privacy-policy-1918" />} />
         </Routes>
       </Suspense>
     </Router>
