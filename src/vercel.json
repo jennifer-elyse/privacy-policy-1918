@@ -1,0 +1,13 @@
+{
+     "headers": [
+          {
+               "source": "/assets/images/private/(.*)",
+               "headers": [
+                    {
+                         "key": "X-Robots-Tag",
+                         "value": "noindex"
+                    }
+               ]
+          }
+     ]
+}
