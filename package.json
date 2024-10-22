@@ -5,13 +5,15 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html && yarn copy",
+    "copy": "cpx src/assets/images/private/**/* dist/assets/images/private/"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^3.0.0",
     "@parcel/transformer-svg-react": "^2.7.0",
     "autoprefixer": "^10.4.13",
     "buffer": "^6.0.3",
+    "cpx": "^1.5.0",
     "crypto-browserify": "^3.12.0",
     "events": "^3.3.0",
     "os-browserify": "^0.3.0",
