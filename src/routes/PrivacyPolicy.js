@@ -1,12 +1,15 @@
 import React from "react";
 
+const logo = new URL('../assets/images/favicon-white.ico', import.meta.url);
+
+
 const PrivacyPolicy = () => {
 
   return (
         <main class="container mx-auto px-4 py-8">
           <section class="relative">
             <img
-              src="https://via.placeholder.com/200"
+          src={logo}
               alt="1918 WSP" 
               class="float-right ml-6 mb-6 w-48 h-48 object-cover rounded-full border-4 border-gray-500"
             />
