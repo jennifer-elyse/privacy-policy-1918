@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
+        <Routes> 
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="*" element={<Navigate to="/privacy-policy" />} />
         </Routes>
